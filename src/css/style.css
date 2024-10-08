@@ -1,0 +1,238 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Tipografia */
+body {
+    background-color: #F4F4F4; /* cor de fundo cinza claro */
+    color: #1A202C; /* azul escuro para o texto */
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif; /* fontes modernas para títulos */
+}
+
+header {
+    background-color: #1A202C; /* azul escuro */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    background: url('/src/img/banner.jpg') no-repeat center center/cover;
+    height: 70vh; /* ajuste de altura para o banner */
+    color: #ff3c00;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #FF6600; /* laranja */
+    color: white;
+    padding: 12px 24px; /* botões maiores */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* animação suave */
+}
+
+.btn:hover {
+    background-color: #cc5200; /* laranja mais escuro */
+    transform: scale(1.05); /* leve zoom ao passar o mouse */
+}
+
+.produtos-destaque {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* animação nas imagens */
+}
+
+.produto img:hover {
+    transform: scale(1.05); /* zoom nas imagens ao passar o mouse */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Estilos para o carrinho de compras */
+.carrinho {
+    padding: 30px 20px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#itens-carrinho {
+    margin-bottom: 20px;
+}
+
+.item-carrinho {
+    margin: 10px 0;
+}
+
+#total-carrinho {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#limpar-carrinho {
+    margin-top: 20px;
+    background-color: #ff3333;
+}
+
+/* Estilo básico para os botões */
+.btn {
+    background-color: #FF6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover para os botões */
+.btn:hover {
+    background-color: #cc5200; /* Cor mais escura ao passar o mouse */
+}
+
+/* Hover específico para o botão "Limpar Carrinho" */
+#limpar-carrinho:hover {
+    background-color: #e60000; /* Cor mais escura para o botão de limpar */
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.section {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+/* Estilos para a seção de comentários */
+.comentarios {
+    padding: 30px 20px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#novo-comentario {
+    width: 85%; /* reduzido em 15% */
+    margin-bottom: 10px; /* espaço entre a caixa e o botão */
+    padding: 10px; /* adiciona um pouco de padding */
+}
+
+#adicionar-comentario {
+    width: 85%; /* reduzido em 15% */
+}
+
+/* Estilos para a seção de comentários */
+.comentarios {
+    padding: 30px 20px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#novo-comentario {
+    width: 40%; /* reduzido em 60% */
+    margin-bottom: 10px; /* espaço entre a caixa e o botão */
+    padding: 10px; /* adiciona um pouco de padding */
+}
+
+#adicionar-comentario {
+    width: 40%; /* reduzido em 60% */
+}
+
+/* Estilos para a seção de comentários */
+.comentarios {
+    padding: 30px 20px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    text-align: center; /* Centraliza o texto */
+    display: flex; /* Habilita o flexbox */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+#novo-comentario {
+    width: 40%; /* reduzido em 60% */
+    margin-bottom: 10px; /* espaço entre a caixa e o botão */
+    padding: 10px; /* adiciona um pouco de padding */
+}
+
+#adicionar-comentario {
+    width: 40%; /* reduzido em 60% */
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado Online</title>
+    
+    <!-- Adicionando Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    
+    <style>
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        body, p, li {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <header>
+        <nav>
+            <h1>Supermercado Online</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner principal com animação -->
+    <section class="banner section">
+        <h2>Bem-vindo ao Supermercado Online</h2>
+        <p>Confira nossas promoções e produtos de alta qualidade!</p>
+        <a href="#" class="btn">Ver Produtos</a>
+    </section>
+
+    <!-- Produtos em destaque com animação -->
+    <section class="produtos-destaque section">
+        <h2>Produtos em Destaque</h2>
+        <div class="produtos">
+            <div class="produto">
+                <img src="./src/img/produto1.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>R$ 20,00</p>
+                <button class="btn">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="./src/img/produto2.jpg" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>R$ 15,00</p>
+                <button class="btn">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Mais produtos podem ser adicionados aqui -->
+        </div>
+    </section>
+
+    <!-- Carrinho de Compras com animação -->
+    <section class="carrinho section">
+        <h2>Carrinho de Compras</h2>
+        <div id="itens-carrinho"></div>
+        <p id="total-carrinho">Total: R$ 0,00</p>
+        <button id="limpar-carrinho" class="btn">Limpar Carrinho</button>
+    </section>
+
+<!-- Seção de Comentários -->
+    <section class="comentarios section">
+        <h2>Comentários dos Clientes</h2>
+        <div id="lista-comentarios"></div>
+        <textarea id="novo-comentario" placeholder="Escreva seu comentário aqui..." rows="4" style="width: 40%;"></textarea>
+        <button id="adicionar-comentario" class="btn" style="width: 40%;">Adicionar Comentário</button>
+   </section>
+
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Supermercado Online. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link para o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
